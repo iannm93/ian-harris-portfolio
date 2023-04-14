@@ -1,0 +1,10 @@
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-nav{
+    width: 15%;
+    background-color: green;
+    height: 100%;
+}

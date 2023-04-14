@@ -1,0 +1,50 @@
+
+.container-whole{
+    display: flex;
+}
+.whole-container{
+    display: flex;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+.active{
+    text-decoration: underline 5px white;
+   
+}
+.container-nav{
+    width: 15%;
+    background-color: green;
+    height: 100%;
+}
+
+.container-rest{
+    width: 85%;
+    background-color: black;
+    height: 100%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.container-bio{
+    background-color: blue;
+    color: white;
+    width: 85%;
+}
+@media(max-width: 900px){
+    .container-nav{
+        display: none;
+    }
+.whole-container{
+    display: flex;
+    justify-content: center;
+}
+.container-whole{
+    display: flex;
+    justify-content: center;
+}
+}
