@@ -111,7 +111,7 @@
     }
     .contain{
       display: flex;
-      justify-content: center;
+      justify-content: center !important;
     }
     .container-nav{
       display: none;
@@ -124,6 +124,14 @@
       object-fit: cover;
       border-radius: 10px;
       border: 5px solid #B3BDC2 !important;
+    }
+    .container-bio{
+        width: 100% !important;
+        padding: 15px !important;
+        margin-top: 1em !important;
+    }
+    .bio-typed{
+        padding: 20px;
     }
   }
   
@@ -163,6 +171,7 @@
   }
   .container-bio{
     margin: 0 auto;
+    
     
     width: 70%;
     height: auto;
