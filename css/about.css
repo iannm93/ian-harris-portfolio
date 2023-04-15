@@ -96,6 +96,9 @@
     #grid {
       display: contents;
     }
+    body{
+        overflow-x: hidden !important;
+    }
     .flex-box-titles{
       display: grid;
     grid-template-columns:  repeat(2,150px);
