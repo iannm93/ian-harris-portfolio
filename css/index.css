@@ -11,17 +11,22 @@
     font-family: "Medium";
     src: url("../Kallisto\ Medium.otf");
   }
-  #ian-harris{
-    font-family: "Medium";
+  
+  @font-face {
+    font-family: "Heavy";
+    src: url("../Kallisto\ Heavy.otf");
   }
-body{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-}
+  body{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+    #ian-harris{
+      font-family: "Medium";
+      color: #B3BDC2  !important;
+    }
 ul{
-    z-index: 4;
     color: white !important;
     font-family: "Kallisto" !important;
 }
@@ -47,7 +52,11 @@ a{
   
   }
 .active{
-    text-decoration: underline 5px white;
+    /* border-bottom: 2px solid white; */
+    /* line-height: .85; */
+    display: inline-block;
+    font-family: "Heavy";
+    font-weight: bolder;
    
 }
 #code{
@@ -57,3 +66,24 @@ a{
     align-items: end;
     justify-content: center;
 }
+.container-rest{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    }
+    ul:hover{
+
+        transform: scale(1.05) translateY(-3px);
+        transition: .3s ease-in;
+        cursor: pointer;
+    }
+    
+
+    a:hover{
+
+        transform: scale(1.05) translateY(-3px);
+        transition: .3s ease-in;
+        cursor: pointer;
+    }
+    

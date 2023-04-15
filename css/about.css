@@ -176,6 +176,8 @@
     #23252d,
   
     #262932 , #17181b) !important;
+    /* background: linear-gradient(#17181b,#42445A,#464a4e) !important; */
+
     overflow-x: hidden;
     /* color: white !important; */
   }
@@ -191,3 +193,9 @@
   
     border-radius: 10px;
   }
+  ul:hover{
+
+    transform: scale(1.05) translateY(-3px);
+    transition: .3s ease-in;
+    cursor: pointer;
+}

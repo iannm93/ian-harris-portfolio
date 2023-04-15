@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Kallisto';
+    src: url("../Kallisto\ Thin.otf");
+    
+  }
+  @font-face {
+    font-family: "Light";
+    src: url("../Kallisto\ Light.otf");
+  }
+  @font-face {
+    font-family: "Medium";
+    src: url("../Kallisto\ Medium.otf");
+  }
+  
+  @font-face {
+    font-family: "Heavy";
+    src: url("../Kallisto\ Heavy.otf");
+  }
+  @font-face {
+    font-family: "Thin";
+    src: url("../Kallisto\ Thin.otf");
+  }
+.container-nav{
+    display: flex;
+    flex-direction: column;
+    /* width: 15%; */
+    height: 100vh;
+}
+.container-rest{
+    height: 100vh;
+    width: 85%;
+}
+.medium{
+    font-family: "Medium";
+}
+.thin{
+    font-family: "Thin";
+    color: #B3BDC2;
+}
+
+body{
+    background: linear-gradient(#17181b,#42445A,#464a4e) !important;
+    color: #B3BDC2;
+}
+form{
+    margin: 0 auto;
+    width: 50%;
+}
+ul{
+    font-family: "Thin";
+}
+input, textarea{
+    border: 2px solid #b3b3b3  !important;
+    border-radius: 10px !important;
+    background-color: transparent !important;
+    font-family: "Thin" !important;
+
+}
+button{
+    background-color: transparent !important;
+    border: 2px solid #b3b3b3 !important;
+    border-radius: 10px !important;
+    font-family: "Thin" !important;
+    color: #B3BDC2 !important;
+}
+ul:hover{
+
+    transform: scale(1.05) translateY(-3px);
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+@media(max-width: 1300px){
+    .container-nav{
+        display: none;
+    }
+    .container-rest{
+        height: 100vh;
+        width: 100%;
+    }
+}
