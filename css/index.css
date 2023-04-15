@@ -90,9 +90,9 @@ a{
         transition: .3s ease-in;
         cursor: pointer;
     }
-    /* @media (max-width:900px){
+    @media (max-width:900px){
         .container-about{
-            background-position: center center;
+            height: 70vh;
         }
-    } */
+    }
     
