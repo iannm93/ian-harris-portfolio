@@ -166,7 +166,7 @@ ul:hover{
     transition: .3s ease-in;
     cursor: pointer;
 }
-/* .revealSelector{
+.revealSelector{
   position: relative;
   transform: translateY(30px);
   opacity: 0;
@@ -176,8 +176,19 @@ ul:hover{
   opacity: 1;
   transform: translateY(-30px);
   transition: ease-in 1s;
-} */
+}
 
+.revealSelectorRight{
+  position: relative;
+  transform: translateX(30px);
+  opacity: 0;
+}
+.revealSelectorRight.active{
+  position: relative;
+  opacity: 1;
+  transform: translateX(-30px);
+  transition: ease-in 1s;
+}
 .titles{
   margin-right: 1.25rem;
 }
