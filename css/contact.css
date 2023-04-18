@@ -95,3 +95,6 @@ button:hover{
     transform: scale(1.02) translateY(-5px);
     transition: .3s ease-in;
 }
+a{
+    text-decoration: none !important;
+  }

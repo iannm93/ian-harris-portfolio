@@ -31,6 +31,7 @@ img{
     border-radius: 15px;
 }
 .grid{
+  opacity: 0;
     width: 90%;
     height: 100%;
     gap: 1em;
@@ -40,6 +41,9 @@ img{
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
+
+
+
 .item{
     background-color: green;
 }
@@ -92,4 +96,7 @@ ul:hover{
     transform: scale(1.05) translateY(-3px);
     transition: .3s ease-in;
     cursor: pointer;
+}
+a{
+  text-decoration: none !important;
 }

@@ -41,7 +41,7 @@ a {
 }
 .container-nav {
   font-family: "Kallisto";
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   width: 15%;
   height: auto;
@@ -50,7 +50,6 @@ a {
 .active {
   /* border-bottom: 2px solid white; */
   /* line-height: .85; */
-  display: inline-block;
   font-family: "Heavy";
   font-weight: bolder;
 }
@@ -68,7 +67,7 @@ a {
   justify-content: center;
 }
 ul:hover {
-  transform: scale(1.05) translateY(-3px);
+    transform: translateY(-5px) scale(1.001);
   transition: 0.3s ease-in;
   cursor: pointer;
 }
@@ -77,10 +76,8 @@ ul:hover {
   min-width: 100%;
 }
 
-a:hover {
-  transform: scale(1.05) translateY(-3px);
-  transition: 0.3s ease-in;
-  cursor: pointer;
+a{
+  text-decoration: none !important;
 }
 @media (max-width: 900px) {
   .container-about {
@@ -90,3 +87,4 @@ a:hover {
     height: 50%;
   }
 }
+

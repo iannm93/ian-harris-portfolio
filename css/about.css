@@ -166,13 +166,29 @@ ul:hover{
     transition: .3s ease-in;
     cursor: pointer;
 }
+/* .revealSelector{
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.revealSelector.active{
+  position: relative;
+  opacity: 1;
+  transform: translateY(-30px);
+  transition: ease-in 1s;
+} */
+
+.titles{
+  margin-right: 1.25rem;
+}
 
 @media (max-width: 900px) {
   #grid {
     display: contents;
   }
-  body{
+  body, *{
       overflow-x: hidden !important;
+      overflow-y: hidden !important;
   }
   .flex-box-titles{
     display: grid;
@@ -211,4 +227,7 @@ ul:hover{
   .bio-typed{
       padding: 20px;
   }
+}
+a{
+  text-decoration: none !important;
 }
