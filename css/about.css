@@ -198,7 +198,7 @@ ul:hover{
     display: contents;
   }
   body, *{
-      overflow-x: hidden !important;
+      overflow-x:visible
   }
   .flex-box-titles{
     display: grid;
