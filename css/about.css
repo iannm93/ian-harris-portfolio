@@ -166,11 +166,11 @@ ul:hover{
     transition: .3s ease-in;
     cursor: pointer;
 }
-.revealSelector{
+/* .revealSelector{
   position: relative;
   transform: translateY(30px);
   opacity: 0;
-}
+} */
 .revealSelector.active{
   position: relative;
   opacity: 1;
@@ -237,7 +237,7 @@ ul:hover{
   .bio-typed{
       padding: 20px;
   }
-  .revealSelector{
+  /* .revealSelector{
     position: relative;
     transform: translateY(20px);
     opacity: 0;
@@ -259,7 +259,7 @@ ul:hover{
     opacity: 1;
     transform: translateX(-20px);
     transition: ease-in 1s;
-  }
+  } */
 }
 a{
   text-decoration: none !important;
