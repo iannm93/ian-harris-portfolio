@@ -199,7 +199,6 @@ ul:hover{
   }
   body, *{
       overflow-x: hidden !important;
-      overflow-y: hidden !important;
   }
   .flex-box-titles{
     display: grid;
@@ -237,6 +236,29 @@ ul:hover{
   }
   .bio-typed{
       padding: 20px;
+  }
+  .revealSelector{
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  .revealSelector.active{
+    position: relative;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: ease-in 1s;
+  }
+  
+  .revealSelectorRight{
+    position: relative;
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  .revealSelectorRight.active{
+    position: relative;
+    opacity: 1;
+    transform: translateX(-20px);
+    transition: ease-in 1s;
   }
 }
 a{
