@@ -197,6 +197,29 @@ background-color: black;
   text-transform: uppercase;
 
 }
+.container h4 {
+
+  background-color: #000000;
+
+  border-bottom: 2px solid #fff;
+
+  color: #fff;
+
+border-radius:5px;
+box-shadow: #000;
+  font-weight: 600;
+
+  letter-spacing: 6px;
+
+margin: 0;
+  padding: 10px 10px;
+
+  text-transform: uppercase;
+
+}
+h3:hover{
+  cursor: pointer !important;
+}
 
 
 
@@ -226,7 +249,7 @@ background-color: black;
 
   content: '';
 
-  opacity: 0.9;
+  opacity: .9;
 
   z-index: 1;
 
@@ -307,12 +330,11 @@ background-color: black;
 }
 
 
-
 .container:hover > img,
 
 .container.hover > img {
 
-  opacity: 0.5;
+  opacity: 1;
 
 }
 
@@ -337,6 +359,8 @@ background-color: black;
   -webkit-transform: skew(45deg) translateX(55%);
 
   transform: skew(45deg) translateX(55%);
+
+  
 
 }
 
