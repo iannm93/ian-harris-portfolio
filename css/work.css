@@ -349,6 +349,11 @@ h3:hover{
 
   transform: skew(45deg) translateX(-55%);
 
+  /* if you want the closing lines to rotate as they close in, use code below */
+  /* -webkit-transform: skew(405deg) translateX(-55%);
+
+  transform: skew(405deg) translateX(-55%); */
+
 }
 
 
@@ -360,6 +365,12 @@ h3:hover{
   -webkit-transform: skew(45deg) translateX(55%);
 
   transform: skew(45deg) translateX(55%);
+
+  /* if you want the closing lines to rotate as they close in, use code below */
+
+  /* -webkit-transform: skew(405deg) translateX(-55%);
+
+  transform: skew(405deg) translateX(-55%); */
 
   
 
