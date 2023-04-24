@@ -33,7 +33,7 @@ img{
 }
 .grid{
   background: linear-gradient( black) !important;
-    width: 85%;
+    width: 90%;
     height: 100%;
     gap: 1em;
     text-align: center;
