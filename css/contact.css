@@ -20,6 +20,18 @@
     font-family: "Thin";
     src: url("../Kallisto\ Thin.otf");
   }
+  #contact-me-blurb{
+    /* background-color: #b3b3b3;
+    display: flex;
+    justify-content: center;
+    width: 50%; */
+    margin: 0 auto;
+    width: 50%;
+    letter-spacing: 3px;
+    /* text-decoration: uppercase; */
+
+  }
+
 .container-nav{
     margin-top: 6em;
     display: flex;
