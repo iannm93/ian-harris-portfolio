@@ -29,7 +29,6 @@
 img{
     border: 5px solid #b3b3b3;
     border-radius: 15px;
-    object-fit: cover !important;
 }
 .grid{
   background: linear-gradient( black) !important;
@@ -91,143 +90,106 @@ ul:hover{
     transition: .2s ease-in;
     cursor: pointer;
 }
-@media (max-width: 1200px) {
-  .grid{
-    width: 95%;
-  }
-  h4 .container{
-    font-size: 1em !important;
-  }
-    .container-nav{
-      display: none;
-    }
-    .container-rest{
-      width: 100%;
-      height: auto;
-    }
-    .center-when-small{
-        display: flex;
-        justify-content: center;
-    }
-    
-  
-  }
-  @media (max-width: 799px) {
-
-        .grid{
-            grid-template-columns: repeat(1, 90%);
-            overflow-y: auto;
-            
-        }
-        .container h4{
-          font-size: 1em;
-        }
-      .container h3{
-        font-size: .6em !important;
-      }
-    
- 
-  }
 
 
 body{
-    min-height: 100vh;
-    color: white !important;
+  min-height: 100vh;
+  color: white !important;
   background-color: black !important;
   /* #17181b,#464a4e */
-    /* background: linear-gradient(#17181b, #464a4e) !important; */
+  /* background: linear-gradient(#17181b, #464a4e) !important; */
   overflow-x: hidden;
 }
 ul:hover{
-
-    transform: scale(1.05) translateY(-3px);
-    transition: .3s ease-in;
-    cursor: pointer;
-}
-a{
-  text-decoration: none !important;
-}
-
-
-
-.container {
-background-color: black;
-
-
-  font-family: 'Open Sans', sans-serif;
-
-  font-size: 16px;
-
-  margin: 10px;
-
-
-
-  overflow: hidden;
-
+  
+  transform: scale(1.05) translateY(-3px);
+  transition: .3s ease-in;
+  cursor: pointer;
+  }
+  a{
+    text-decoration: none !important;
+  }
+  
+  
+  
+  .container {
+    background-color: black;
+    
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    font-size: 16px;
+    
+    margin: 10px;
+    
+    
+    
+    overflow: hidden;
+    
   position: relative;
-
+  
   text-align: center;
-
+  
   width: 100%;
-
+  
 }
 
 
 
 .container * {
-
+  
   -webkit-box-sizing: border-box;
-
+  
   box-sizing: border-box;
-
+  
   -webkit-transition: all 0.35s ease;
-
+  
   transition: all 0.35s ease;
-
+  
 }
 
 
 
 .container h3 {
-
+  
   background-color: #000000;
-
+  
   border: 2px solid #fff;
-
+  
   color: #fff;
-
+  
   font-size: 1em;
-
+  
   font-weight: 600;
-
-  letter-spacing: 3px;
-
+  
+  letter-spacing: 1px;
+  
   margin: 0;
-
+  
   padding: 5px 10px;
-
+  
   text-transform: uppercase;
-
+  
 }
 .container h4 {
-
+  
   background-color: #000000;
-
+  
   border-bottom: 2px solid #fff;
-
+  
   color: #fff;
-
-border-radius:5px;
-box-shadow: #000;
+  
+  border-radius:5px;
+  box-shadow: #000;
   font-weight: 600;
-
+  
   letter-spacing: 6px;
-
-margin: 0;
+  
+  margin: 0;
   padding: 10px 10px;
-
+  
   text-transform: uppercase;
-
+  
 }
 h3:hover{
   cursor: pointer !important;
@@ -238,120 +200,117 @@ h3:hover{
 .container:before,
 
 .container:after {
-
+  
   position: absolute;
-
+  
   top: 0;
-
+  
   bottom: 0;
-
+  
   left: 0;
-
+  
   right: 0;
-
+  
   -webkit-transition: all 0.35s ease;
-
+  
   transition: all 0.35s ease;
-
+  
   background-color: #000000;
-
+  
   border-left: 3px solid #fff;
-
+  
   border-right: 3px solid #fff;
   /* border-radius: 100px 0px 0px 50px; */
-
+  
   content: '';
-
+  
   opacity: .9;
-
+  
   z-index: 1;
-
+  
 }
 
 
 
 .container:before {
-
+  
   -webkit-transform: skew(45deg) translateX(-155%);
-
+  
   transform: skew(45deg) translateX(-155%);
-  transition: .6s all;
-
+  
 }
 
 
 
 .container:after {
-
+  
   -webkit-transform: skew(45deg) translateX(155%);
-
+  
   transform: skew(45deg) translateX(155%);
-
-  transition: .6s all;
-
+  
 }
 
 
 
 .container img {
-
+  
   backface-visibility: hidden;
-
+  
   max-width: 100%;
-
+  
   vertical-align: top;
-
+  
 }
 
 
 
 .container figcaption {
-
+  
   top: 50%;
-
+  
   left: 50%;
-
+  
   position: absolute;
-
+  
   z-index: 2;
-
+  
   -webkit-transform: translate(-50%, -50%) scale(0.5);
-
+  
   transform: translate(-50%, -50%) scale(0.5);
-
+  
   opacity: 0;
-
+  
   -webkit-box-shadow: 0 0 10px #000000;
-
+  
   box-shadow: 0 0 10px #000000;
-
+  
 }
 
 
 
 .container a {
-
+  
   position: absolute;
-
+  
   top: 0;
-
+  
   bottom: 0;
-
+  
   left: 0;
-
+  
   right: 0;
-
+  
   z-index: 3;
-
+  
 }
 
 
 .container:hover > img,
 
 .container.hover > img {
-
+  
   opacity: 1;
-
+  
 }
 
 
@@ -359,16 +318,18 @@ h3:hover{
 .container:hover:before,
 
 .container.hover:before {
-
+  
   -webkit-transform: skew(45deg) translateX(-55%);
-
+  
   transform: skew(45deg) translateX(-55%);
-
+  transition: .5s all;
+  
+  
   /* if you want the closing lines to rotate as they close in, use code below */
   /* -webkit-transform: skew(405deg) translateX(-55%);
-
+  
   transform: skew(405deg) translateX(-55%); */
-
+  
 }
 
 
@@ -376,19 +337,20 @@ h3:hover{
 .container:hover:after,
 
 .container.hover:after {
-
-  -webkit-transform: skew(45deg) translateX(55%);
-
-  transform: skew(45deg) translateX(55%);
-
-  /* if you want the closing lines to rotate as they close in, use code below */
-
-  /* -webkit-transform: skew(405deg) translateX(-55%);
-
-  transform: skew(405deg) translateX(-55%); */
-
   
-
+  -webkit-transform: skew(45deg) translateX(55%);
+  
+  transform: skew(45deg) translateX(55%);
+  transition: .5s all;
+  
+  /* if you want the closing lines to rotate as they close in, use code below */
+  
+  /* -webkit-transform: skew(405deg) translateX(-55%);
+  
+  transform: skew(405deg) translateX(-55%); */
+  
+  
+  
 }
 
 
@@ -396,17 +358,72 @@ h3:hover{
 .container:hover figcaption,
 
 .container.hover figcaption {
-
+  
   -webkit-transform: translate(-50%, -50%) scale(1);
-
+  
   transform: translate(-50%, -50%) scale(1);
-
+  
   opacity: 1;
-
+  
 }
 
 h3:hover{
   transform: scale(1.02);
   transform: translateY(-5px);
   transition: .5s ease;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .container-nav{
+      display: none;
+    }
+    .container-rest{
+      width: 100%;
+      height: auto;
+    }
+    .center-when-small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .grid{
+      width: 100%;
+      padding: 20px;
+    }
+    
+  
+  }
+@media (max-width: 819px) {
+
+      .grid{
+          grid-template-columns: repeat(1, 95%);
+          overflow-y: auto;
+          width: 100%;
+          justify-content: center;
+          align-items: center;    
+      }
+      .container h4{
+        font-size: 1em;
+      }
+      .container h3{
+        font-size: .85em;
+      }
+
+  
+
+}
+@media (width = 768px){
+  .grid{
+    grid-template-columns: repeat(2, 45%);
+    width: 100%;
+    /* padding: 20px; */
+    align-items: center;
+  }
 }
