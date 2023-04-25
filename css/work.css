@@ -91,8 +91,13 @@ ul:hover{
     transition: .2s ease-in;
     cursor: pointer;
 }
-@media (max-width: 1400px) {
-
+@media (max-width: 1200px) {
+  .grid{
+    width: 95%;
+  }
+  h4 .container{
+    font-size: 1em !important;
+  }
     .container-nav{
       display: none;
     }
@@ -107,13 +112,19 @@ ul:hover{
     
   
   }
-  @media (max-width: 850px) {
+  @media (max-width: 799px) {
 
         .grid{
-            grid-template-columns: repeat(1, 100%);
+            grid-template-columns: repeat(1, 90%);
             overflow-y: auto;
             
         }
+        .container h4{
+          font-size: 1em;
+        }
+      .container h3{
+        font-size: .6em !important;
+      }
     
  
   }
@@ -210,7 +221,7 @@ border-radius:5px;
 box-shadow: #000;
   font-weight: 600;
 
-  letter-spacing: 9px;
+  letter-spacing: 6px;
 
 margin: 0;
   padding: 10px 10px;
@@ -264,6 +275,7 @@ h3:hover{
   -webkit-transform: skew(45deg) translateX(-155%);
 
   transform: skew(45deg) translateX(-155%);
+  transition: .6s all;
 
 }
 
@@ -274,6 +286,8 @@ h3:hover{
   -webkit-transform: skew(45deg) translateX(155%);
 
   transform: skew(45deg) translateX(155%);
+
+  transition: .6s all;
 
 }
 
