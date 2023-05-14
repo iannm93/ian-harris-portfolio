@@ -81,10 +81,11 @@ a{
 }
 @media (max-width: 900px) {
   .container-about {
-    height: 70vh;
+    height: 90h;
   }
   #code {
-    height: 50%;
+    text-align: center;
+    height: 75%;
   }
 }
 
