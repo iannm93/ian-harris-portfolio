@@ -32,9 +32,10 @@ img{
 }
 .grid{
   background: linear-gradient(#1f2225 ) !important;
-    width: 90%;
+    width: 95% !important;
     height: 100%;
-    gap: 1em;
+    gap: .1em;
+    overflow-x: hidden !important;
     text-align: center;
     display: grid;
     justify-content: center;
@@ -111,6 +112,29 @@ ul:hover{
     color: #fffff4;
   }
   
+  .bar{
+  
+    width: 50px;
+    height: 50px;
+  }
+  .bar1{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .bar2{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .bar3{
+  
+      width: 20px;
+      height: 3px;
+      color: white;
+      background-color: white;
+    
+  }
   
   
   .container {
@@ -375,17 +399,28 @@ h3:hover{
 }
 
 
+.shift{
+margin-left: 15rem;
+}
 
-
+.responsive-contents{
+  visibility: none;
+}
 
 @media (max-width: 1200px) {
 
-    .container-nav{
+  .responsive-contents{
+    opacity: 0;
+  }
+    .responsive-nav{
       display: none;
     }
     .container-rest{
       width: 100%;
       height: auto;
+    }
+    .burger{
+      display: contents !important;
     }
     .center-when-small{
         display: flex;
@@ -402,7 +437,9 @@ h3:hover{
   
   }
 @media (max-width: 799px) {
-
+  .shift{
+    margin-left: 11rem;
+  }
       .grid{
           grid-template-columns: repeat(1, 95%);
           overflow-y: auto;
