@@ -236,6 +236,15 @@ ul:hover{
   .bio-typed{
       padding: 20px;
   }
+
+  .shift{
+    margin-left: 15rem;
+    }
+    
+    .responsive-contents{
+      visibility: none;
+    }
+
   /* .revealSelector{
     position: relative;
     transform: translateY(20px);
