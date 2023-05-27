@@ -79,7 +79,7 @@ ul:hover {
 a{
   text-decoration: none !important;
 }
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .container-about {
     height: 70vh;
   }
