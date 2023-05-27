@@ -36,7 +36,7 @@
     margin-top: 6em;
     display: flex;
     flex-direction: column;
-    /* width: 15%; */
+    width: 15%;
     height: 100vh;
 }
 .container-rest{
@@ -71,6 +71,11 @@ input, textarea{
     font-family: "Thin" !important;
 
 }
+.responsive-contents{
+    visibility: none;
+  }
+  
+
 button{
     background-color: transparent !important;
     border: 2px solid #b3b3b3 !important;
@@ -88,23 +93,151 @@ ul:hover{
     height: 50px;
     width: 150px;
 }
-@media(max-width: 1300px){
-    .container-nav{
-        display: none;
-    }
-    .container-rest{
-        height: 100vh;
-        width: 100%;
-    }
+
+.bar{
+  
+    width: 50px;
+    height: 50px;
+  }
+  .bar1{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .bar2{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .bar3{
     
-}
+    width: 20px;
+      height: 3px;
+      color: white;
+      background-color: white;
+    
+    }
+    .burger{
+      display: none;
+    }
+
 @media(max-width: 900px){
 
     form{
-        width: 75%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .shift{
+        margin-left: 15rem;
+      }
+
+      #contact-me-blurb{
+        width: 80%;
+        /* text-align: start; */
+      }
+}
+.navbarSpread{
+    display: none;
+}
+@media (max-width: 1365px) {
+    .container-nav{
+        display: none;
     }
 
-}
+    .navbarSpread{
+        display: contents !important;
+      }
+      .navbar-brand{
+        /* margin-left: 50%; */
+        padding: 0% 0% 0% 50%;
+    }
+    
+    .navbar {
+        width: 100%;
+        /* background-color: #ba9ef9; */
+        overflow: auto;
+      }
+      
+      /* Navigation links */
+      .navbar a {
+        /* float: left; */
+        /* padding: 12px; */
+        /* color: #8a72ff; */
+        text-decoration: none;
+        font-size: 17px;
+        width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center; /*If you want the text to be centered*/
+        /* background-color: ; */
+          
+        /* transition: all 1s ease-out; */
+    
+      }
+      
+      
+      /* Add a background color on mouse-over */
+      .navbar a:hover {     
+        color: #4936b7;
+        overflow-x: hidden;
+        transform: translateY(-5px);
+        transition: all .1s ease-in;
+        font-weight: 600;
+        letter-spacing: .1em;
+      }
+      
+      /* Style the current/active link */
+      .navbar a.active {
+        font-weight: 600;
+      }
+      
+    .shift{
+      margin: 0 auto;
+    }
+    #grid {
+      display: contents;
+    }
+    .flex-box-titles{
+      display: grid;
+    grid-template-columns:  repeat(2,200px);
+    gap: 2.5em;
+    }
+  
+    .flex-box {
+        display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .first-flex{
+      display: block;
+    }
+    .contain{
+        display: flex;
+        justify-content: center;
+    }
+    /* .container-nav{
+        display: none;
+    } */
+    .container-rest{
+        width: 100%;
+        height: 100vh;
+    }
+    .titles-and-names{
+      margin-top: 1em;
+      /* padding: 5px; */
+    }
+      .responsive-contents{
+    opacity: 0;
+  }
+    .responsive-nav{
+      display: none;
+    }
+    .container-rest{
+      width: 100%;
+      height: auto;
+    }
+    .burger{
+      display: contents !important;
+    }
+  }
 button:hover{
     transform: scale(1.02) translateY(-5px);
     transition: .3s ease-in;

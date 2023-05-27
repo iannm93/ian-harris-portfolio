@@ -82,7 +82,7 @@ a{
 }
 @media (max-width: 767px) {
   .container-about {
-    height: auto;
+    height: 80vh;
   }
   #code {
     text-align: center;

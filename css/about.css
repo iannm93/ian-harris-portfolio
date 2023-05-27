@@ -47,6 +47,10 @@
     border: 5px solid #B3BDC2;
   
   }
+
+  .shift{
+  
+  }
   
   #grid {
     gap: 3em;
@@ -90,50 +94,20 @@
   .medium{
     font-family: "Medium" !important;
   }
+
   
-  
-  @media (max-width: 1400px) {
-    #grid {
-      display: contents;
-    }
-    .flex-box-titles{
-      display: grid;
-    grid-template-columns:  repeat(2,200px);
-    gap: 2.5em;
-    }
-  
-    .flex-box {
-        display: block;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .first-flex{
-      display: block;
-    }
-    .contain{
-        display: flex;
-        justify-content: center;
-    }
-    .container-nav{
-        display: none;
-    }
-    .container-rest{
-        width: 100%;
-        height: 100vh;
-    }
-    .titles-and-names{
-      margin-top: 1em;
-      /* padding: 5px; */
-    }
-  }
   .container-bio{
-      margin: 0 auto;
+    margin: 0 auto;
       
       
       width: 70%;
       height: auto;
     }
+    img{
+      overflow-x: hidden;
+    }
     body{
+      overflow-x: hidden;
         color: white !important;
         /* background-color: black !important; */
         /* #17181b,#464a4e */
@@ -146,10 +120,10 @@
     
     overflow-x: hidden;
     /* color: white !important; */
-}
+  }
 .column{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
   .bio-typed{
     padding: 15px ;
@@ -202,9 +176,9 @@ ul:hover{
   .flex-box-titles{
     display: grid;
   grid-template-columns:  repeat(2,150px);
-    gap: 2.5em;
-  }
-  .flex-box {
+  gap: 2.5em;
+}
+.flex-box {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -216,9 +190,9 @@ ul:hover{
     display: flex;
     justify-content: center !important;
   }
-  .container-nav{
+  /* .container-nav{
     display: none;
-  }
+  } */
   .container-rest{
     width: 100%;
     height: 100vh;
@@ -229,22 +203,22 @@ ul:hover{
     border: 5px solid #B3BDC2 !important;
   }
   .container-bio{
-      width: 100% !important;
-      padding: 15px !important;
+    width: 100% !important;
+    padding: 15px !important;
       margin-top: 1em !important;
-  }
+    }
   .bio-typed{
-      padding: 20px;
+    padding: 20px;
   }
-
+  
   .shift{
     margin-left: 15rem;
+  }
+  
+  .responsive-contents{
+    visibility: none;
     }
     
-    .responsive-contents{
-      visibility: none;
-    }
-
   /* .revealSelector{
     position: relative;
     transform: translateY(20px);
@@ -273,3 +247,132 @@ a, ul{
   text-decoration: none !important;
   color: #fffff4 !important;
 }
+.bar{
+  
+  width: 50px;
+  height: 50px;
+}
+.bar1{
+  width: 20px;
+  height: 3px;
+  background-color: white;
+}
+.bar2{
+  width: 20px;
+  height: 3px;
+  background-color: white;
+}
+.bar3{
+  
+  width: 20px;
+    height: 3px;
+    color: white;
+    background-color: white;
+  
+  }
+  .burger{
+    display: none;
+  }
+ 
+   
+.navbarSpread{
+  display: none;
+}
+  
+  @media (max-width: 1365px) {
+    .navbarSpread{
+      display: contents !important;
+    }
+    .navbar-brand{
+      /* margin-left: 50%; */
+      padding: 0% 0% 0% 50%;
+  }
+  
+  .navbar {
+      width: 100%;
+      /* background-color: #ba9ef9; */
+      overflow: auto;
+    }
+    
+    /* Navigation links */
+    .navbar a {
+      /* float: left; */
+      /* padding: 12px; */
+      /* color: #8a72ff; */
+      text-decoration: none;
+      font-size: 17px;
+      width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+      text-align: center; /*If you want the text to be centered*/
+      /* background-color: ; */
+        
+      /* transition: all 1s ease-out; */
+  
+    }
+    
+    
+    /* Add a background color on mouse-over */
+    .navbar a:hover {     
+      color: #4936b7;
+      overflow-x: hidden;
+      transform: translateY(-5px);
+      transition: all .1s ease-in;
+      font-weight: 600;
+      letter-spacing: .1em;
+    }
+    
+    /* Style the current/active link */
+    .navbar a.active {
+      font-weight: 600;
+    }
+    
+   
+
+    .shift{
+      margin: 0 auto;
+    }
+    #grid {
+      display: contents;
+    }
+    .flex-box-titles{
+      display: grid;
+    grid-template-columns:  repeat(2,200px);
+    gap: 2.5em;
+    }
+  
+    .flex-box {
+        display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .first-flex{
+      display: block;
+    }
+    .contain{
+        display: flex;
+        justify-content: center;
+    }
+    /* .container-nav{
+        display: none;
+    } */
+    .container-rest{
+        width: 100%;
+        height: 100vh;
+    }
+    .titles-and-names{
+      margin-top: 1em;
+      /* padding: 5px; */
+    }
+        .responsive-contents{
+      opacity: 0;
+    }
+    .responsive-nav{
+      display: none;
+    }
+    .container-rest{
+      width: 100%;
+      height: auto;
+    }
+    .burger{
+      display: contents !important;
+    }
+  }
