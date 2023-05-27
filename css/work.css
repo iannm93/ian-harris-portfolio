@@ -31,10 +31,11 @@ img{
     border-radius: 15px;
 }
 .grid{
-  background: linear-gradient( black) !important;
-    width: 90%;
+  background: linear-gradient(#1f2225 ) !important;
+    width: 95% !important;
     height: 100%;
-    gap: 1em;
+    gap: .1em;
+    overflow-x: hidden !important;
     text-align: center;
     display: grid;
     justify-content: center;
@@ -49,7 +50,7 @@ transition: all .35s ease;
 }
 
 #image img{
-  border: 8px solid #fff;
+  border: 8px solid 	#fffff4;
   box-shadow: 0 0 5px 1px #555;
   border-radius: 5px;
 }
@@ -94,8 +95,8 @@ ul:hover{
 
 body{
   min-height: 100vh;
-  color: white !important;
-  background-color: black !important;
+  color: 	#fffff4!important;
+  background-color: #1f2225 !important;
   /* #17181b,#464a4e */
   /* background: linear-gradient(#17181b, #464a4e) !important; */
   overflow-x: hidden;
@@ -106,14 +107,38 @@ ul:hover{
   transition: .3s ease-in;
   cursor: pointer;
   }
-  a{
+  a,ul{
     text-decoration: none !important;
+    color: #fffff4;
+  }
+  
+  .bar{
+  
+    width: 50px;
+    height: 50px;
+  }
+  .bar1{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .bar2{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+  }
+  .bar3{
+  
+      width: 20px;
+      height: 3px;
+      color: white;
+      background-color: white;
+    
   }
   
   
-  
   .container {
-    background-color: black;
+    background-color: #1f2225;
     
     
     font-family: 'Open Sans', sans-serif;
@@ -152,11 +177,11 @@ ul:hover{
 
 .container h3 {
   
-  background-color: #000000;
+  background-color: #1f2225;
   
-  border: 2px solid #fff;
+  border: 2px solid 	#fffff4;
   
-  color: #fff;
+  color: 	#fffff4;
   
   font-size: 1em;
   
@@ -173,14 +198,14 @@ ul:hover{
 }
 .container h4 {
   
-  background-color: #000000;
+  background-color: #1f2225;
   
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid 	#fffff4;
   
-  color: #fff;
+  color: 	#fffff4;
   
   border-radius:5px;
-  box-shadow: #000;
+  box-shadow: #1f2225;
   font-weight: 600;
   
   letter-spacing: 6px;
@@ -215,11 +240,11 @@ h3:hover{
   
   transition: all 0.35s ease;
   
-  background-color: #000000;
+  background-color: #1f2225;
   
-  border-left: 3px solid #fff;
+  border-left: 5px solid 	#fffff4;
   
-  border-right: 3px solid #fff;
+  border-right: 5px solid 	#fffff4;
   /* border-radius: 100px 0px 0px 50px; */
   
   content: '';
@@ -374,17 +399,28 @@ h3:hover{
 }
 
 
+.shift{
+margin-left: 15rem;
+}
 
-
+.responsive-contents{
+  visibility: none;
+}
 
 @media (max-width: 1200px) {
 
-    .container-nav{
+  .responsive-contents{
+    opacity: 0;
+  }
+    .responsive-nav{
       display: none;
     }
     .container-rest{
       width: 100%;
       height: auto;
+    }
+    .burger{
+      display: contents !important;
     }
     .center-when-small{
         display: flex;
@@ -400,8 +436,10 @@ h3:hover{
     
   
   }
-@media (max-width: 819px) {
-
+@media (max-width: 799px) {
+  .shift{
+    margin-left: 11rem;
+  }
       .grid{
           grid-template-columns: repeat(1, 95%);
           overflow-y: auto;

@@ -28,6 +28,7 @@ body {
 ul {
   color: white !important;
   font-family: "Kallisto" !important;
+  width: 10%;
 }
 .container-about {
   height: 95vh;
@@ -81,10 +82,11 @@ a{
 }
 @media (max-width: 767px) {
   .container-about {
-    height: 70vh;
+    height: auto;
   }
   #code {
-    height: 50%;
+    text-align: center;
+    height: 67.5%;
   }
 }
 

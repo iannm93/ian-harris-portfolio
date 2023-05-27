@@ -59,8 +59,10 @@ form{
     margin: 0 auto;
     width: 50%;
 }
-ul{
+a,ul{
     font-family: "Thin";
+    text-decoration: none !important;
+    color: #fffff4 !important;
 }
 input, textarea{
     border: 2px solid #b3b3b3  !important;

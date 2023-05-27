@@ -165,7 +165,7 @@ ul:hover{
     transition: .3s ease-in;
     cursor: pointer;
 }
-.revealSelector{
+/* .revealSelector{
   position: relative;
   transform: translateY(30px);
   opacity: 0;
@@ -187,7 +187,7 @@ ul:hover{
   opacity: 1;
   transform: translateX(-30px);
   transition: ease-in 1s;
-}
+} */
 .titles{
   margin-right: 1.25rem;
 }
@@ -236,7 +236,16 @@ ul:hover{
   .bio-typed{
       padding: 20px;
   }
-  .revealSelector{
+
+  .shift{
+    margin-left: 15rem;
+    }
+    
+    .responsive-contents{
+      visibility: none;
+    }
+
+  /* .revealSelector{
     position: relative;
     transform: translateY(20px);
     opacity: 0;
@@ -258,8 +267,9 @@ ul:hover{
     opacity: 1;
     transform: translateX(-20px);
     transition: ease-in 1s;
-  }
+  } */
 }
-a{
+a, ul{
   text-decoration: none !important;
+  color: #fffff4 !important;
 }
