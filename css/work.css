@@ -19,7 +19,7 @@
     h1{
         font-family: "Medium";
     }
-    ul{
+    ul,a {
         font-family: "Kallisto";
     }
   .container-rest {
@@ -424,6 +424,13 @@ margin-left: 15rem;
     width: 100%;
     /* background-color: #ba9ef9; */
     overflow: auto;
+    padding: 15px;
+  }
+  #imh{
+    width: 50px;
+    height: 25px;
+    border: none !important;
+    border-radius: 0px !important;
   }
   
   /* Navigation links */

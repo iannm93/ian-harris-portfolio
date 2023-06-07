@@ -63,6 +63,7 @@ a,ul{
     font-family: "Thin";
     text-decoration: none !important;
     color: #fffff4 !important;
+    font-family: "Kallisto";
 }
 input, textarea{
     border: 2px solid #b3b3b3  !important;
@@ -143,7 +144,10 @@ ul:hover{
     .container-nav{
         display: none;
     }
-
+    #imh{
+      width: 50px;
+      height: 25px;
+    }
     .navbarSpread{
         display: contents !important;
       }
@@ -156,6 +160,7 @@ ul:hover{
         width: 100%;
         /* background-color: #ba9ef9; */
         overflow: auto;
+        padding: 15px;
       }
       
       /* Navigation links */

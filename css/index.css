@@ -39,6 +39,7 @@ ul {
 
 a {
   text-decoration: none !important;
+  font-family: "Kallisto";
 }
 .container-nav {
   font-family: "Kallisto";
@@ -47,6 +48,9 @@ a {
   width: 15%;
   height: auto;
   /* background: linear-gradient(#17181b, #464a4e) !important; */
+}
+.navbarSpread{
+  display: none !important;
 }
 .active {
   /* border-bottom: 2px solid white; */
@@ -82,7 +86,7 @@ a{
 }
 @media (max-width: 767px) {
   .container-about {
-    height: 80vh;
+    height: 110vh;
   }
   #code {
     text-align: center;
@@ -90,3 +94,51 @@ a{
   }
 }
 
+@media (max-width: 1365px) {
+  #imh{
+    height: 25px;
+    width: 50px;
+  }
+  #container-nav{
+      display: none !important;
+      visibility: hidden !important;
+  }
+
+  .navbarSpread{
+      display: contents !important;
+    }
+    .navbar-brand{
+      /* margin-left: 50%; */
+      padding: 0% 0% 0% 50%;
+  }
+     .navbar{
+      padding: 15px;
+    }
+  
+  .navbar {
+      width: 100%;
+      /* background-color: #ba9ef9; */
+      overflow: auto;
+    }
+    
+    /* Navigation links */
+    .navbar a {
+      /* float: left; */
+      /* padding: 12px; */
+      /* color: #8a72ff; */
+      text-decoration: none !important;
+      color: white;
+      font-size: 17px;
+      width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+      text-align: center; /*If you want the text to be centered*/
+      /* background-color: ; */
+        
+      /* transition: all 1s ease-out; */
+  
+    }
+    .navbar a.active {
+      font-weight: 600;
+    }
+    
+    
+  }
